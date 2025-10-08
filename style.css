@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  background-size: 400% 400%;
+  animation: bgFlow 10s ease infinite;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+@keyframes bgFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease forwards;
+}
+
+h2 {
+  font-size: 1.6rem;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+button {
+  margin-top: 40px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff4d79;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  background-color: #ff3366;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Floating hearts animation */
+.hearts::before,
+.hearts::after {
+  content: "💖 💕 💗 💓 💞 💘";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  opacity: 0.8;
+  animation: floatHearts 10s linear infinite;
+}
+
+@keyframes floatHearts {
+  0% { transform: translate(-50%, 100vh); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translate(-50%, -100px); opacity: 0; }
+}
+.choice-btn {
+  padding: 10px 24px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transform: scale(1);
+}
+
+.choice-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.choice-btn.yes {
+  background: linear-gradient(45deg, #ff4d6d, #ff6b81);
+  color: white;
+}
+
+.choice-btn.no {
+  background: linear-gradient(45deg, #555, #777);
+  color: white;
+}
+
+#line2, #line3 {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.6s ease;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #ffb6c1, #ff4d6d);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #ffb6c1, #ff4d6d);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.3em;
+  margin-bottom: 10px;
+}
+
+#line2, #line3 {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.6s ease;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#revealBtn {
+  background: linear-gradient(45deg, #ff4d6d, #ff6b81);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#revealBtn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.choice-btn {
+  padding: 10px 24px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.choice-btn.yes {
+  background: linear-gradient(45deg, #ff4d6d, #ff6b81);
+  color: white;
+}
+
+.choice-btn.no {
+  background: linear-gradient(45deg, #444, #777);
+  color: white;
+}
+
+.choice-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
