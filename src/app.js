@@ -5,6 +5,11 @@ const line3 = document.getElementById("line3");
 const messages = [
   "You’re sweet, easy-going, and full of light 💫",
   "You have this calm, beautiful energy that makes everything better 😍",
+  "You always mind your business, but when you care, you really care 💖",
+  "You laugh in a way that makes everyone else smile too 😊",
+  "You’ve got this golden heart — soft, kind, and real 💫",
+  "You eat like you’re fighting for a world record 😂 but still look gorgeous 😩",
+  "You’re the kind of peace everyone wishes they had 💐",
   "So... Okeyemi Adebola Victoria, will you be my girlfriend? 💖"
 ];
 
